@@ -32,3 +32,15 @@ img {
 .fa-heart {
   color: hsl(240, 30%, 35%);
 }
+
+button {
+  padding: 10px 24px;
+  margin: 24px 0;
+  background-color: hsl(240, 30%, 70%);
+  color: hsl(240, 30%, 10%);
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 1px 1px hsl(0, 0%, 40%);
+  font-weight: 700;
+  cursor: pointer;
+}
