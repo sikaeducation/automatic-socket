@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="US-en">
+  <head>
+    <title>Postra</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Postra</h1>
+    <div class="card">
+      <p class="name">@quinn</p>
+      <img src="./person.jpg" alt="Image thing" />
+      <p class="message">I think I'm really to starting to connect everything together with WebSockets.</p>
+      <p><i class="fa fa-heart"></i> <span class="likes">0</span></p>
+    </div>
+    <script>
+      const element = document.querySelector(".likes")
+      const ws = new WebSocket(`ws://${location.host}/socket-server`)
+
+      ws.addEventListener("message", (message) => {
+        element.textContent = message.data
+      })
+    </script>
+  </body>
+</html>

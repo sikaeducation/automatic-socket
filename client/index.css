@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  color: hsl(240, 30%, 5%);
+}
+
+h1 {
+  font-family: "Carter One", script;
+  color: hsl(240, 30%, 5%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.name {
+  font-size: 18px;
+  color: hsl(240, 10%, 30%)
+}
+
+.card {
+  padding: 16px 32px;
+  box-shadow: 3px 3px 10px hsl(0, 0%, 60%);
+  width: 175px;
+}
+
+.fa-heart {
+  color: hsl(240, 30%, 35%);
+}
