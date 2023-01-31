@@ -2,9 +2,9 @@
 
 Postra is a social media app that updates like counts in real-time. Using `client/index.html`:
 
-1. Connect to the WebSocket server at `/socket-server`. Hint: You must set the full URL, including the WebSocket protocol and host, which you can get from `window.location.hostname`.
-2. Every 2 seconds, you'll receive a message with an updated like count. Add an event listener for this.
-3. In the event handler, update the content of the `.likes` span with the message data.
+1. Connect to the WebSocket server at `/socket-server`. Hint: You must set the full URL, including the WebSocket protocol and host, which you can get with `` `ws://${window.location.host}/socket-server` ``
+2. Every 2 seconds, the socket will receive a message with an updated like count. Add an event listener for it.
+3. In its event handler, update the content of the `.likes` span with the message data.
 
 ## Setup
 
